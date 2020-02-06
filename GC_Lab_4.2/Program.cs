@@ -64,6 +64,7 @@ namespace GC_Lab_4._2
 
 
             }
+            Console.WriteLine();
             return input;
         }
 
