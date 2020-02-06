@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GC_Lab_4._2
 {
@@ -7,7 +8,23 @@ namespace GC_Lab_4._2
         static void Main(string[] args)
         {
             Console.WriteLine("Movie Merch");
-
+            List<Movie> movieList = new List<Movie>();
+            movieList.Add(new Movie("How to Train your dragon", "animated,"));
+            movieList.Add(new Movie("", "animated,"));
+            movieList.Add(new Movie("", "animated,"));
+            movieList.Add(new Movie("", "animated,"));
+            movieList.Add(new Movie("", "drama,"));
+            movieList.Add(new Movie("", "drama,"));
+            movieList.Add(new Movie("", "drama,"));
+            movieList.Add(new Movie("", "drama,"));
+            movieList.Add(new Movie("", "horror,"));
+            movieList.Add(new Movie("", "horror,"));
+            movieList.Add(new Movie("", "horror,"));
+            movieList.Add(new Movie("", "horror,"));
+            movieList.Add(new Movie("", "scifi."));
+            movieList.Add(new Movie("", "scifi."));
+            movieList.Add(new Movie("", "scifi."));
+            movieList.Add(new Movie("", "scifi."));
             do
             {
 
