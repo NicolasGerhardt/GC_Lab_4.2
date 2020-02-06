@@ -8,14 +8,21 @@ namespace GC_Lab_4._2
     {
         #region Fields
         private string title;
-        private string category;
+        private MovieCategory category;
         #endregion
         #region Poperties
         public string Title { get => title; set => title = value; }
-        public string Category { get => category; set => category = value; }
+        public MovieCategory Category { get => category; set => category = value; }
+        public enum MovieCategory
+        {
+            animated,
+            drama,
+            horror,
+            scifi
+        }
         #endregion
         #region Constructors
-        public Movie(string title, string category)
+        public Movie(string title, MovieCategory category)
         {
             Title = title;
             Category = category;
@@ -24,7 +31,7 @@ namespace GC_Lab_4._2
         #region Methods
         public bool IsCategory(string category)
         {
-            if (this.category.ToLower().Contains(category.ToLower()))
+            if (this.category.Equals(category))
             {
                 return true;
             }
